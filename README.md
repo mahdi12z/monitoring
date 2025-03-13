@@ -101,7 +101,7 @@ Kubeshark is a powerful tool designed to inspect and monitor Kubernetes network 
 # 1.install brew
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-  echo >> /home/aress/.bashrc
+  echo >> /home/[user]/.bashrc
    sudo apt-get install build-essential
 ```
 # 2.Install via Homebrew 
