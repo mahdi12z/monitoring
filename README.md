@@ -95,6 +95,38 @@ sudo systemctl restart cockpit.service
 
 
 
+# Deploying and Configuring Kubeshark for Kubernetes Traffic Inspection
+ Overview
+Kubeshark is a powerful tool designed to inspect and monitor Kubernetes network traffic in real-time. It provides deep packet inspection, protocol decoding, and a web-based interface to analyze network flows.
+# 1.install brew
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  echo >> /home/aress/.bashrc
+   sudo apt-get install build-essential
+```
+# 2.Install via Homebrew 
+```bash
+
+brew install kubeshark/kubeshark/kubeshark
+```
+# 3. cp config
+```bash
+ cp /root/.kube/config /home/[user]/.kube/config
+```
+
+# 4.Run Kubeshark with --proxy-host 0.0.0.0
+```bash
+ kubeshark tap --proxy-host 0.0.0.0
+```
+
+Now, you can access it via:
+
+```bash
+http://[YOUR_SERVER_IP]:8899
+```
+
+
+
 
 
 
